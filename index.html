@@ -7,10 +7,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jazz Production</title>
     <!-- favicon  -->
-
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- tailwind stylesheet  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- customize style  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        yellow: '#EDF25C',
+                        cream: '#D9967E',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
+    <header>
+        <section class="w-full bg-white h-16 absolute">
+            <nav class="w-4/5 mx-auto h-full flex justify-between items-center">
+                <div class="text-3xl font-poppins font-bold">
+                    <a href="">
+                        <h1>Jazz Production</h1>
+                    </a>
+                </div>
+                <ul class="flex gap-5 font-semibold text-xl hidden md:flex ">
+                    <a href="">
+                        <li>Movie Items</li>
+                    </a>
+                    <a href="">
+                        <li>Our Services </li>
+                    </a>
+                    <a href="">
+                        <li>About Us</li>
+                    </a>
+                </ul>
+            </nav>
+        </section>
+        <section class="bg-[url('./images/banner.jpg')] h-screen pt-20 bg-cover flex items-center">
+            <div class=" w-4/5 mx-auto text-white">
+                <h3 class="text-xl ">Movie Production Studio</h3>
+                <h1 class="text-5xl text-yellow my-5 uppercase font-bold">Films Made to Perfection</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit temporibus nihil ea ipsa quos
+                    qui magni saepe esse. Vitae, quo.</p>
+                <button class="my-5 border border-yellow text-yellow p-3 hover:border-white hover:text-white">Discover
+                    More</button>
+            </div>
+        </section>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
 
 </body>
 
