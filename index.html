@@ -31,6 +31,7 @@
 
 <body>
     <header>
+        <!-- navbar stye  -->
         <section class="w-full bg-white h-16 absolute">
             <nav class="w-4/5 mx-auto h-full flex justify-between items-center">
                 <div class="text-3xl font-poppins font-bold">
@@ -39,18 +40,19 @@
                     </a>
                 </div>
                 <ul class="flex gap-5 font-semibold text-xl hidden md:flex ">
-                    <a href="">
+                    <a href="#movie">
                         <li>Movie Items</li>
                     </a>
-                    <a href="">
+                    <a href="#service">
                         <li>Our Services </li>
                     </a>
-                    <a href="">
+                    <a href="#about">
                         <li>About Us</li>
                     </a>
                 </ul>
             </nav>
         </section>
+        <!-- banner part  -->
         <section class="bg-[url('./images/banner.jpg')] h-screen pt-20 bg-cover flex items-center">
             <div class=" w-4/5 mx-auto text-white">
                 <h3 class="text-xl ">Movie Production Studio</h3>
@@ -64,10 +66,10 @@
     </header>
 
     <main>
-        <section class="w-4/5 mx-auto border-black border-4 my-10 p-10">
-            <div class="grid grid-cols-2 gap-x-10">
+        <!-- about us part  -->
+        <section id="about" class="w-full lg:w-4/5 mx-auto border-black border-4 my-10 p-10">
+            <div class="grid lg:grid-cols-2 gap-x-10">
                 <div class="bg-[url('./images/camera-man.jpg')] h-[500px] bg-cover bg-center">
-
                 </div>
                 <div>
                     <h1 class="text-xl uppercase font-bold mb-3">About Us</h1>
@@ -80,7 +82,7 @@
                         More</button>
                 </div>
             </div>
-            <div class="grid grid-cols-3 gap-x-10">
+            <div class="grid lg:grid-cols-3 grid-cols-2 gap-x-10">
                 <div class="border-t-4 my-10 border-black rounded">
                     <h1 class="text-3xl font-bold font-poppins my-3">
                         Our Mission
@@ -106,15 +108,15 @@
                 </div>
             </div>
         </section>
-
-        <section class="bg-dark text-white">
+        <!-- movie part  -->
+        <section id="movie" class="bg-dark text-white">
             <div class="w-4/5 mx-auto text-whit py-5">
                 <h1 class="uppercase my-2 text-xl font-bold">Movie Items</h1>
-                <div class="flex justify-between items-center my-8">
+                <div class="lg:flex justify-between items-center my-8">
                     <h1 class="text-5xl font-bold">Movie Collection</h1>
                     <button class="border-2 p-3">See More Movies</button>
                 </div>
-                <div class="grid grid-cols-4 gap-x-5">
+                <div class="grid lg:grid-cols-4 gap-5">
                     <div class="border-2 border-white h-[400px] w-full p-5">
                         <div class="bg-[url('./images/tenet.jpg')] bg-cover bg-center w-full h-full">
                             <h1 class="text-xl uppercase font-bold ">Tenet</h1>
@@ -138,10 +140,11 @@
                 </div>
             </div>
         </section>
-        <section class="w-4/5 mx-auto my-10">
+        <!-- service part  -->
+        <section id="service" class="w-4/5 mx-auto my-10">
             <h1 class="text-center font-bold font-poppins text-xl uppercase">Services</h1>
             <h1 class="text-center font-bold font-poppins text-3xl uppercase my-5">What we offer</h1>
-            <div class="grid grid-cols-4 gap-10">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-10">
                 <div class="border-2 border-black p-5 flex flex-col items-center">
                     <img class="w-2/5" src="./images/icons/3d-glasss.png" alt="">
                     <h1 class="text-xl font-bold my-2 font-poppins">Movies Direction</h1>
@@ -200,20 +203,18 @@
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer>
+        <!-- footer style  -->
         <section class="bg-dark ">
             <div class="w-4/5 mx-auto text-white text-center p-10">
                 <h1 class="text-3xl mb-5 font-bold font-poppins">Jazz Production</h1>
                 <h1 class="font-bold text-xl">Next Level Experience</h1>
                 <p> class=""Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, eaque.</p>
                 <p class="mt-10"> Copyright &copy; 2022. All rights are reserved by Jazz Production</p>
-
             </div>
         </section>
-
     </footer>
 
 </body>
